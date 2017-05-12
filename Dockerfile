@@ -2,4 +2,4 @@
 FROM tomcat
 RUN apt-get update
 RUN apt-get install -y git
-RUN cp HelloApp.war /usr/local/tomcat/webapps/HelloApp.war
+COPY HelloApp.war /usr/local/tomcat/webapps/HelloApp.war
